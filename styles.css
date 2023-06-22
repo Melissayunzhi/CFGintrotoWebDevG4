@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+header .navbar-brand {
+  font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+  margin-right: 10px;
+}
+
+header .navbar-nav .nav-link.sell-items {
+  color: white;
+  background-color: gray;
+}
+
+
+header form {
+  margin-left: 20px;
+}
+
+header input[type="search"] {
+  width: 200px;
+}
+
+header .fa-shopping-cart {
+  font-size: 24px;
+}
+
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.banner {
+  background-image: url("bannerimage.jpg" );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-content {
+  text-align: right;
+  font-size: 36px;
+  padding: 20px;
+  color: #fff;
+}
+
+
+.banner h1 {
+  margin-top: 100px; /* Adjust the value as desired */
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.featured-products {
+  padding: 50px 0;
+}
+
+h2.text-center {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.card {
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #777;
+  margin-bottom: 0;
+}
+
+.btn-light {
+  background-color: #fff;
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-light:hover {
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+}
+
+footer p {
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.new-arrivals {
+  padding: 50px 0;
+}
+
+.new-arrivals h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.new-arrivals .card {
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.new-arrivals .card:hover {
+  transform: scale(1.05);
+}
+
+.new-arrivals .card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.new-arrivals .card-body {
+  padding: 20px;
+}
+
+.new-arrivals .card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.new-arrivals .card-text {
+  color: #777;
+  margin-bottom: 0;
+}
