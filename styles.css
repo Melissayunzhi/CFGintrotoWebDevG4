@@ -180,9 +180,9 @@ h1, h2 {
 }
 
 footer {
-  background-color: #f8f8f8;
-  padding: 20px 0;
-  color: #666;
+  background-color: #333;
+  padding: 40px 0;
+  color: #fff;
 }
 
 .container {
@@ -192,19 +192,18 @@ footer {
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .footer-section {
-  flex-basis: 30%;
-  margin-bottom: 20px;
+  flex-basis: 50%;
+  margin-bottom: 40px;
 }
 
 .footer-section h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #333;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 .footer-section p,
@@ -214,29 +213,29 @@ footer {
 
 .footer-section ul li {
   list-style-type: none;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .footer-section ul li a {
-  color: #666;
+  color: #aaa;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-  color: #333;
+  color: #fff;
 }
 
 .footer-bottom {
   text-align: center;
-  padding-top: 10px;
-  border-top: 1px solid #ddd;
-  font-size: 14px;
-  color: #999;
+  padding-top: 20px;
+  border-top: 1px solid #555;
 }
 
 .footer-bottom p {
   margin: 0;
+  font-size: 14px;
+  color: #aaa;
 }
 
 /* Social Media Icons */
@@ -245,29 +244,30 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .footer-section ul.social-media li {
-  margin: 0 5px;
+  margin: 0 10px;
 }
 
 .footer-section ul.social-media li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: #666;
+  background-color: #777;
   color: #fff;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .footer-section ul.social-media li a:hover {
-  background-color: #333;
+  background-color: #555;
 }
 
 .footer-section ul.social-media li a i {
-  font-size: 14px;
+  font-size: 18px;
 }
