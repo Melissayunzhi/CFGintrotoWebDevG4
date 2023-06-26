@@ -30,7 +30,6 @@ header .navbar-nav .nav-link.sell-items {
   background-color: gray;
 }
 
-
 header form {
   margin-left: 20px;
 }
@@ -43,13 +42,12 @@ header .fa-shopping-cart {
   font-size: 24px;
 }
 
-
 .navbar {
   margin-bottom: 20px;
 }
 
 .banner {
-  background-image: url("bannerimage.jpg" );
+  background-image: url("bannerimage.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -61,7 +59,6 @@ header .fa-shopping-cart {
   padding: 20px;
   color: #fff;
 }
-
 
 .banner h1 {
   margin-top: 100px; /* Adjust the value as desired */
@@ -130,6 +127,7 @@ h2.text-center {
 footer {
   background-color: #343a40;
   color: #fff;
+  padding: 20px 0;
 }
 
 footer p {
