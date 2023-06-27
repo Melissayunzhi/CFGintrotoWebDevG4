@@ -240,6 +240,7 @@ footer {
 
 /* Social Media Icons */
 
+/* 
 .footer-section ul.social-media {
   display: flex;
   align-items: center;
@@ -270,4 +271,36 @@ footer {
 
 .footer-section ul.social-media li a i {
   font-size: 18px;
+}*/
+
+
+.footer {
+  text-align: center;
 }
+
+.footer-content {
+  display: inline-block;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+/* Assuming you're using Font Awesome for the social media icons */
+.fab {
+  font-size: inherit;
+}
+
+
