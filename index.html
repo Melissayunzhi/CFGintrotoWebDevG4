@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
@@ -155,22 +155,14 @@
     </div>
   </footer>
         
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script>
     document.getElementById('searchForm').addEventListener('submit', function(e) {
       e.preventDefault();
       var searchInput = document.getElementById('searchInput').value.toLowerCase();
-      var products = document.querySelectorAll('.card-title');
-      for (var i = 0; i < products.length; i++) {
-        var productTitle = products[i].textContent.toLowerCase();
-        var card = products[i].closest('.card');
-        if (productTitle.includes(searchInput)) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      }
+      window.location.href = 'search-results.html?search=' + encodeURIComponent(searchInput);
     });
   </script>
 </body>
