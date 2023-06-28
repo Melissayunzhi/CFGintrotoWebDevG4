@@ -155,16 +155,22 @@
     </div>
   </footer>
         
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script>
     document.getElementById('searchForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      var searchInput = document.getElementById('searchInput').value;
-      // Perform search functionality here using the searchInput value
-      console.log('Search query:', searchInput);
-      // You can replace the console.log statement with your own search implementation
+      var searchInput = document.getElementById('searchInput').value.toLowerCase();
+      var products = document.querySelectorAll('.card-title');
+      for (var i = 0; i < products.length; i++) {
+        var productTitle = products[i].textContent.toLowerCase();
+        var card = products[i].closest('.card');
+        if (productTitle.includes(searchInput)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      }
     });
   </script>
 </body>
