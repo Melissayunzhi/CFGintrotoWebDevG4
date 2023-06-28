@@ -1,88 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Shopping Website</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
 <body>
-    <body>
-        <header>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">
-                <img src="logo.png" alt="Logo" style="width: 70px; height: auto;">
-              </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item mr-2">
-                  <a class="nav-link" href="coming-soon.html">Categories</a>
-                </li>
-                <li class="nav-item mr-2">
-                  <a class="nav-link" href="coming-soon.html">Shop Sale</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0" id="searchForm">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
-                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-              </form>
-              
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link sell-items" href="coming-soon.html">Sell Your Items</a>
-                </li>
-                
-                <li class="nav-item">
-                  <a class="nav-link" href="coming-soon.html">
-                    <img src="shopping-cart.png" alt="Shopping Cart"style="width: 20px; height: 20px;">
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.png" alt="Logo" style="width: 70px; height: auto;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="coming-soon.html">Categories</a>
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="coming-soon.html">Shop Sale</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" id="searchForm" action="search-results.html">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search-query">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link sell-items" href="coming-soon.html">Sell Your Items</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="coming-soon.html">
+              <img src="shopping-cart.png" alt="Shopping Cart"style="width: 20px; height: 20px;">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
   
   <section class="search-results">
     <div class="container">
       <h2>Search Results</h2>
-      <div id="searchResults"></div>
+      <div id="searchResults" class="row"></div>
     </div>
   </section>
 
   <footer class="bg-dark text-white text-center py-3">
     <div class="container">
-      <!-- Footer content -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>Vintage clothing market.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="footer-section">
+            <h3>Customer Service</h3>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Shipping Information</a></li>
+              <li><a href="#">Returns & Exchanges</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="footer-section">
+            <h3>Connect With Us</h3>
+            <ul class="social-icons">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"></div>
     </div>
   </footer>
-
-
-  <script>
-    // Retrieve the search query from the URL parameter
-    var searchQuery = decodeURIComponent(getParameterByName('search-query'));
-
-    // Display the search query
-    var searchQueryElement = document.createElement('p');
-    searchQueryElement.textContent = 'Search Query: ' + searchQuery;
-    document.getElementById('searchResults').appendChild(searchQueryElement);
-
-    // Helper function to retrieve URL parameters
-    function getParameterByName(name, url) {
-        if (!url) url = window.location.href;
-        name = name.replace(/[[\]]/g, '\\$&');
-        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-            results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
-    }
-</script>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
 </body>
 </html>
