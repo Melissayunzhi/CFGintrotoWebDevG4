@@ -1,6 +1,6 @@
 // Get the search form and search input element
 const searchForm = document.querySelector('form');
-const searchInput = document.querySelector('input[type="search"]');
+const searchInput = document.querySelector('input[name="search-query"]');
 
 // Add an event listener to the form submission
 searchForm.addEventListener('submit', function (event) {
