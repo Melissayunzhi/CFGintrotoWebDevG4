@@ -71,6 +71,34 @@ header .fa-shopping-cart {
   font-size: 20px;
   margin-bottom: 30px;
 }
+.coming-soon-banner {
+  background-image: url("doors.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.coming-soon-banner-content {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.coming-soon-banner h1 {
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.coming-soon-banner p {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.coming-soon-banner .btn-primary {
+  font-size: 16px;
+  padding: 10px 20px;
+}
 
 .featured-products {
   padding: 50px 0;
