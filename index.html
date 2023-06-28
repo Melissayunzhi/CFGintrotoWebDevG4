@@ -15,8 +15,9 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html"></a>
-      <img src="logo.png" alt="Logo" style="width: 60px; height: auto;">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.png" alt="Logo" style="width: 70px; height: auto;">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,10 +30,11 @@
             <a class="nav-link" href="coming-soon.html">Shop Sale</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0" action="search-results.html">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search-query">
+        <form class="form-inline my-2 my-lg-0" id="searchForm">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
           <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
         </form>
+        
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link sell-items" href="coming-soon.html">Sell Your Items</a>
@@ -163,10 +165,10 @@
     document.getElementById('searchForm').addEventListener('submit', function(e) {
       e.preventDefault();
       var searchInput = document.getElementById('searchInput').value.toLowerCase();
-      window.location.href = 'search-results.html?search=' + encodeURIComponent(searchInput);
+      window.location.href = 'search-results.html?search-query=' + encodeURIComponent(searchInput);
     });
-  
   </script>
+  
   <script src="script.js"></script>
 
 </body>

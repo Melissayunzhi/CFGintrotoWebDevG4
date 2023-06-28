@@ -15,8 +15,9 @@
     <body>
         <header>
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"></a>
-            <img src="logo.png" alt="Logo" style="width: 60px; height: auto;">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Logo" style="width: 70px; height: auto;">
+              </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -62,28 +63,24 @@
   </footer>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var urlParams = new URLSearchParams(window.location.search);
-      var searchQuery = urlParams.get('search');
-      var products = document.querySelectorAll('.card-title');
-      var searchResults = document.getElementById('searchResults');
-      var matchedProducts = [];
+    // Retrieve the search query from the URL parameter
+    var searchQuery = decodeURIComponent(getParameterByName('search-query'));
 
-      for (var i = 0; i < products.length; i++) {
-        var productTitle = products[i].textContent.toLowerCase();
-        if (productTitle.includes(searchQuery)) {
-          matchedProducts.push(products[i].closest('.card'));
-        }
-      }
+    // Display the search query
+    var searchQueryElement = document.createElement('p');
+    searchQueryElement.textContent = 'Search Query: ' + searchQuery;
+    document.body.appendChild(searchQueryElement);
 
-      if (matchedProducts.length > 0) {
-        for (var j = 0; j < matchedProducts.length; j++) {
-          searchResults.appendChild(matchedProducts[j].cloneNode(true));
-        }
-      } else {
-        searchResults.textContent = 'No results found.';
-      }
-    });
+    // Helper function to retrieve URL parameters
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
   </script>
 </body>
 </html>
