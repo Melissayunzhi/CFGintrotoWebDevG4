@@ -1,5 +1,7 @@
 body {
-  background-color: #f8f8f8;
+  background-image: url("https://assets3.thrillist.com/v1/image/3097445/792x528");
+  background-size: cover;
+  background-position: center;
   font-family: Arial, sans-serif;
 }
 
@@ -13,7 +15,7 @@ body {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: bold;
   text-align: center;
   color: #333;
@@ -21,20 +23,21 @@ h1 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 24px;
   color: #555;
   margin-bottom: 20px;
 }
 
 .button {
   display: inline-block;
-  padding: 10px 20px;
-  font-size: 18px;
+  padding: 16px 32px;
+  font-size: 24px;
   text-decoration: none;
   background-color: #333;
   color: #fff;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
 .button:hover {
