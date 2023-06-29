@@ -135,50 +135,6 @@ header .fa-shopping-cart {
   background-color: #555;
 }
 
-.container {
-  margin-bottom: 20px;
-}
-
-.container h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.container p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.container input[type="text"],
-.container input[type="submit"] {
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  width: 100%;
-}
-
-.container input[type="checkbox"] {
-  margin-right: 10px;
-}
-
-.colored-bg {
-  background-color: #f8f8f8;
-}
-
-.subscribe-btn {
-  background-color: #333;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-}
-
-.subscribe-btn:hover {
-  background-color: #555;
-}
-
 
 .coming-soon-banner .btn-primary {
   font-size: 16px;
