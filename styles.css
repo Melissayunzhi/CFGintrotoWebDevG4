@@ -112,7 +112,7 @@ header .fa-shopping-cart {
 .container input[type="text"],
 .container input[type="submit"] {
   padding: 10px;
-  border: none;
+  border: 1px solid #ccc;
   border-radius: 4px;
   width: 100%;
 }
@@ -122,7 +122,7 @@ header .fa-shopping-cart {
 }
 
 .subscribe-btn {
-  background-color: #333;
+  background-color: #ffc0cb;
   color: #fff;
   cursor: pointer;
   font-size: 16px;
@@ -132,10 +132,8 @@ header .fa-shopping-cart {
 }
 
 .subscribe-btn:hover {
-  background-color: #555;
+  background-color: #ff91a4;
 }
-
-
 
 .coming-soon-banner .btn-primary {
   font-size: 16px;
