@@ -102,13 +102,11 @@ header .fa-shopping-cart {
 .container h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  text-align: center;
 }
 
 .container p {
   font-size: 16px;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .container input[type="text"],
@@ -121,12 +119,6 @@ header .fa-shopping-cart {
 
 .container input[type="checkbox"] {
   margin-right: 10px;
-}
-
-.container.colored-bg {
-  background-color: #f8f8f8;
-  text-align: center;
-  padding: 20px;
 }
 
 .subscribe-btn {
@@ -142,6 +134,7 @@ header .fa-shopping-cart {
 .subscribe-btn:hover {
   background-color: #555;
 }
+
 
 
 .coming-soon-banner .btn-primary {
